@@ -1,0 +1,26 @@
+{
+  "name": "node_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:all": "run-p start:node start:react",
+    "start:node": "nodemon index.js",
+    "start:react": "cd ../react_app && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "socket.io": "^3.1.0",
+    "websocket": "^1.0.33"
+  }
+}
